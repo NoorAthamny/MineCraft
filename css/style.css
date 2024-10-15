@@ -60,6 +60,40 @@ main {
   box-shadow: inset 0px 0px 10px rgba(61, 61, 61, 0.9);
 }
 
+.roles {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  background-color: rgba(124, 123, 123, 0.671);
+  border: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  box-shadow: 5px 10px 10px #11111156;
+  box-shadow: inset 0px 0px 10px rgba(61, 61, 61, 0.9);
+  display: none;
+  li {
+    font-size: 30px;
+    margin-bottom: 40px;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+  }
+}
+
+.fa-x {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 35px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .grid {
   width: 100%;
   display: grid;
@@ -160,4 +194,25 @@ main {
 
 .display-flex {
   display: flex;
+}
+
+#grassCounter {
+  position: absolute;
+  bottom: 5px;
+  left: 40px;
+  color: white;
+}
+
+#dirtCounter {
+  position: absolute;
+  bottom: 5px;
+  left: 115px;
+  color: white;
+}
+
+#stoneCounter {
+  position: absolute;
+  bottom: 5px;
+  right: 55px;
+  color: white;
 }
