@@ -25,7 +25,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(4, 247, 255);
+  background-color: rgb(105, 200, 255);
   z-index: -2;
 }
 .start-btns {
@@ -72,13 +72,13 @@ main {
   cursor: pointer;
 }
 
-.dirtCell {
+.dirtbox {
   background: url(../images/soil2.png) center / cover no-repeat;
 }
-.rockCell {
+.stonebox {
   background: url(../images/Stone.jpg) center / cover no-repeat;
 }
-.grassCell {
+.grassbox {
   background: url(../images/grass2.png) center / cover no-repeat;
 }
 .tools {
@@ -120,8 +120,10 @@ main {
   background-image: url(../images/Stone.jpg);
 
   &:hover {
-    color: rgb(214, 79, 79);
-    border: 2px solid rgb(214, 79, 79);
+    color: rgb(245, 245, 57);
+    border: 1px solid #11111173;
+    box-shadow: 5px 10px 10px #11111156;
+    box-shadow: inset 0px 0px 10px rgba(61, 61, 61, 0.9);
   }
 }
 
