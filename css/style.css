@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 body,
@@ -16,6 +17,16 @@ main {
   height: 100vh;
   background-image: url(../images/green-room-with-pool-stairs-that-has-green-roof.jpg);
   background-size: cover;
+}
+
+.background-sky {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(4, 247, 255);
+  z-index: -2;
 }
 .start-btns {
   height: 100vh;
@@ -47,4 +58,104 @@ main {
   border: 1px solid #11111173;
   box-shadow: 5px 10px 10px #11111156;
   box-shadow: inset 0px 0px 10px rgba(61, 61, 61, 0.9);
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.cell {
+  height: 100px;
+  cursor: pointer;
+}
+
+.dirtCell {
+  background: url(../images/soil2.png) center / cover no-repeat;
+}
+.rockCell {
+  background: url(../images/Stone.jpg) center / cover no-repeat;
+}
+.grassCell {
+  background: url(../images/grass2.png) center / cover no-repeat;
+}
+.tools {
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 50px;
+}
+.tools img {
+  width: 70px;
+  background-color: rgba(124, 123, 123, 0.753);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(124, 123, 123);
+  }
+}
+
+.picked {
+  opacity: 0.7;
+}
+.reset {
+  padding: 40px;
+  line-height: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.reset-btn {
+  background-color: gray;
+  padding: 25px 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-image: url(../images/Stone.jpg);
+
+  &:hover {
+    color: rgb(214, 79, 79);
+    border: 2px solid rgb(214, 79, 79);
+  }
+}
+
+.box {
+  position: relative;
+}
+
+.inventory {
+  background-color: rgba(26, 26, 26, 0.788);
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 200px;
+  left: 290px;
+  box-shadow: 5px 10px 10px rgba(61, 61, 61, 0.4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  img {
+    width: 60px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px #fff;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.display-flex {
+  display: flex;
 }
