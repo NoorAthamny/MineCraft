@@ -97,13 +97,20 @@ main {
 .grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(25, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .cell {
   height: 100px;
   cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+    border: 1px solid black;
+  }
 }
 
 .dirtbox {
@@ -115,6 +122,15 @@ main {
 .grassbox {
   background: url(../images/grass2.png) center / cover no-repeat;
 }
+
+.woodbox {
+  background: url(../images/wood.png) center / cover no-repeat;
+}
+
+.leavesbox {
+  background: url(../images/leaves.png) center / cover no-repeat;
+}
+
 .tools {
   width: 400px;
   height: auto;
@@ -137,6 +153,7 @@ main {
 
 .picked {
   opacity: 0.7;
+  border: 1px solid black;
 }
 .reset {
   padding: 40px;
@@ -167,7 +184,7 @@ main {
 
 .inventory {
   background-color: rgba(26, 26, 26, 0.788);
-  width: 250px;
+  width: 400px;
   height: 100px;
   position: absolute;
   top: 200px;
@@ -213,6 +230,20 @@ main {
 #stoneCounter {
   position: absolute;
   bottom: 5px;
-  right: 55px;
+  right: 202px;
+  color: white;
+}
+
+#woodCounter {
+  position: absolute;
+  bottom: 5px;
+  right: 60px;
+  color: white;
+}
+
+#leavesCounter {
+  position: absolute;
+  bottom: 5px;
+  right: 132px;
   color: white;
 }
