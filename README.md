@@ -18,4 +18,5 @@
 
 - Creating the Ui
 - Ui: Tools / Inventory / Sky
-- Features : Selecting Tools, Removing blocks / Adding block
+- Features : Selecting Tools, Removing blocks / Adding block / rest 
+  
